@@ -1,0 +1,27 @@
+Serial Port Monitor provides command line options to launch and start monitoring serial ports automatically:
+
+  SerialMonitor.EXE /new   
+      PORT
+      [A] [T] [L] [R] [D]
+
+where
+•“PORT” defines the serial port to monitor (COM1, COM4, etc.)
+•“A” means that monitoring should be started automatically once you press the “Enter” button
+•“T” means that “Table View” should be toggled on
+•“L” means that “Line View” should be toggled on
+•“R” means that “Terminal View” should be toggled on
+•“D” means that “Data View” should be toggled on
+
+Example:
+
+
+SerialMonitor.exe /new COM1 ATLRD
+ 
+
+
+
+This command launches Serial Port Monitor and straightaway opens COM1 port. All visualizers are enabled.
+
+
+
+SerialMonitor.exe /new COM1 ATLRD

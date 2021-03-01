@@ -11,11 +11,18 @@ using System.Windows.Forms;
 
 namespace DQATEST
 {
-    public partial class FMainSIDA1 : UIForm
+    public partial class FMainSID : UIForm
     {
-        public FMainSIDA1()
+        public FMainSID()
         {
             InitializeComponent();
+            //this.Style = UIStyle.White;
+        }
+
+        private void btnDetailsAnalysis_Click(object sender, EventArgs e)
+        {
+            FDetailsSID fdetails = new FDetailsSID();
+            fdetails.ShowDialog();
         }
     }
 }

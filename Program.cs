@@ -17,7 +17,7 @@ namespace DQATEST
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FMain());
-            Application.Run(new FMainSIDT1());
+            Application.Run(new FMainSID());
         }
     }
 }
