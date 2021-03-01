@@ -1,0 +1,7 @@
+
+打开需要安装NuGet包的VS工程，点击TOOLS-NuGet Package Manager-Package Manager Console。
+
+在控制台中输入Install-Package 包名 -Source 该包存放路径
+
+Install-Package Fody -Source E:\Primax\project_solve\Koyue_Projects\TW_USB_Driver_Sign\KoyueSignApp\AppSignTool\lib
+Install-Package Costura.Fody -Source EPrimaxproject_solveKoyue_ProjectsTW_USB_Driver_SignKoyueSignAppAppSignToollib

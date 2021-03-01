@@ -37,12 +37,7 @@
             this.uiTitlePanel2 = new Sunny.UI.UITitlePanel();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.tabBrief = new System.Windows.Forms.TabPage();
-            this.tabDetails = new System.Windows.Forms.TabPage();
-            this.tabLogs = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.uiImageButton7 = new Sunny.UI.UIImageButton();
-            this.uiImageButton8 = new Sunny.UI.UIImageButton();
-            this.uiImageButton9 = new Sunny.UI.UIImageButton();
             this.uiSymbolButton5 = new Sunny.UI.UISymbolButton();
             this.uiSymbolButton6 = new Sunny.UI.UISymbolButton();
             this.uiLabel14 = new Sunny.UI.UILabel();
@@ -52,6 +47,12 @@
             this.uiLabel18 = new Sunny.UI.UILabel();
             this.uiLabel19 = new Sunny.UI.UILabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.uiLedStopwatch2 = new Sunny.UI.UILedStopwatch();
+            this.uiImageButton7 = new Sunny.UI.UIImageButton();
+            this.uiImageButton8 = new Sunny.UI.UIImageButton();
+            this.uiImageButton9 = new Sunny.UI.UIImageButton();
+            this.tabDetails = new System.Windows.Forms.TabPage();
+            this.tabLogs = new System.Windows.Forms.TabPage();
             this.uiTitlePanel1 = new Sunny.UI.UITitlePanel();
             this.uiTabControl2 = new Sunny.UI.UITabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -65,12 +66,12 @@
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.uiLabel7 = new Sunny.UI.UILabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.uiLedStopwatch1 = new Sunny.UI.UILedStopwatch();
             this.uiImageButton1 = new Sunny.UI.UIImageButton();
             this.uiImageButton2 = new Sunny.UI.UIImageButton();
             this.uiImageButton3 = new Sunny.UI.UIImageButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.uiLedStopwatch1 = new Sunny.UI.UILedStopwatch();
             this.uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -83,10 +84,10 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.uiTitlePanel1.SuspendLayout();
             this.uiTabControl2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -196,7 +197,6 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.uiLedStopwatch1);
             this.splitContainer1.Panel1.Controls.Add(this.uiTitlePanel2);
             // 
             // splitContainer1.Panel2
@@ -237,7 +237,6 @@
             this.uiTabControl1.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiTabControl1.ItemSize = new System.Drawing.Size(80, 20);
             this.uiTabControl1.Location = new System.Drawing.Point(0, 35);
-            this.uiTabControl1.MainPage = "";
             this.uiTabControl1.Name = "uiTabControl1";
             this.uiTabControl1.SelectedIndex = 0;
             this.uiTabControl1.Size = new System.Drawing.Size(264, 205);
@@ -256,27 +255,9 @@
             this.tabBrief.TabIndex = 0;
             this.tabBrief.Text = "brief";
             // 
-            // tabDetails
-            // 
-            this.tabDetails.BackColor = System.Drawing.Color.White;
-            this.tabDetails.Location = new System.Drawing.Point(0, 20);
-            this.tabDetails.Name = "tabDetails";
-            this.tabDetails.Size = new System.Drawing.Size(264, 185);
-            this.tabDetails.TabIndex = 1;
-            this.tabDetails.Text = "details";
-            // 
-            // tabLogs
-            // 
-            this.tabLogs.BackColor = System.Drawing.Color.White;
-            this.tabLogs.Location = new System.Drawing.Point(0, 20);
-            this.tabLogs.Name = "tabLogs";
-            this.tabLogs.Size = new System.Drawing.Size(264, 185);
-            this.tabLogs.TabIndex = 2;
-            this.tabLogs.Text = "logs";
-            // 
             // splitContainer2
             // 
-            this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
             this.splitContainer2.Name = "splitContainer2";
@@ -296,64 +277,13 @@
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.uiLedStopwatch2);
             this.splitContainer2.Panel2.Controls.Add(this.uiImageButton7);
             this.splitContainer2.Panel2.Controls.Add(this.uiImageButton8);
             this.splitContainer2.Panel2.Controls.Add(this.uiImageButton9);
             this.splitContainer2.Size = new System.Drawing.Size(264, 185);
             this.splitContainer2.SplitterDistance = 132;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // uiImageButton7
-            // 
-            this.uiImageButton7.BackColor = System.Drawing.Color.Transparent;
-            this.uiImageButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.uiImageButton7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton7.ForeColor = System.Drawing.Color.Black;
-            this.uiImageButton7.Image = global::DQATEST.Properties.Resources.Emergency;
-            this.uiImageButton7.ImageOffset = new System.Drawing.Point(12, 5);
-            this.uiImageButton7.Location = new System.Drawing.Point(206, 0);
-            this.uiImageButton7.Name = "uiImageButton7";
-            this.uiImageButton7.Size = new System.Drawing.Size(56, 47);
-            this.uiImageButton7.TabIndex = 57;
-            this.uiImageButton7.TabStop = false;
-            this.uiImageButton7.Text = "Stop";
-            this.uiImageButton7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // uiImageButton8
-            // 
-            this.uiImageButton8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.uiImageButton8.BackColor = System.Drawing.Color.Transparent;
-            this.uiImageButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton8.ForeColor = System.Drawing.Color.Black;
-            this.uiImageButton8.Image = global::DQATEST.Properties.Resources.Close;
-            this.uiImageButton8.ImageOffset = new System.Drawing.Point(12, 5);
-            this.uiImageButton8.Location = new System.Drawing.Point(64, 0);
-            this.uiImageButton8.Name = "uiImageButton8";
-            this.uiImageButton8.Size = new System.Drawing.Size(56, 46);
-            this.uiImageButton8.TabIndex = 58;
-            this.uiImageButton8.TabStop = false;
-            this.uiImageButton8.Text = "Start";
-            this.uiImageButton8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // uiImageButton9
-            // 
-            this.uiImageButton9.BackColor = System.Drawing.Color.Transparent;
-            this.uiImageButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.uiImageButton9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiImageButton9.ForeColor = System.Drawing.Color.Black;
-            this.uiImageButton9.Image = global::DQATEST.Properties.Resources.Status;
-            this.uiImageButton9.ImageOffset = new System.Drawing.Point(12, 5);
-            this.uiImageButton9.Location = new System.Drawing.Point(0, 0);
-            this.uiImageButton9.Name = "uiImageButton9";
-            this.uiImageButton9.Size = new System.Drawing.Size(56, 47);
-            this.uiImageButton9.TabIndex = 59;
-            this.uiImageButton9.TabStop = false;
-            this.uiImageButton9.Text = "Status";
-            this.uiImageButton9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // uiSymbolButton5
             // 
@@ -499,6 +429,91 @@
             this.pictureBox3.TabIndex = 76;
             this.pictureBox3.TabStop = false;
             // 
+            // uiLedStopwatch2
+            // 
+            this.uiLedStopwatch2.Active = true;
+            this.uiLedStopwatch2.BackColor = System.Drawing.Color.Black;
+            this.uiLedStopwatch2.CharCount = 8;
+            this.uiLedStopwatch2.ForeColor = System.Drawing.Color.Lime;
+            this.uiLedStopwatch2.IntervalIn = 0;
+            this.uiLedStopwatch2.IntervalOn = 1;
+            this.uiLedStopwatch2.Location = new System.Drawing.Point(136, 13);
+            this.uiLedStopwatch2.Name = "uiLedStopwatch2";
+            this.uiLedStopwatch2.ShowType = Sunny.UI.UILedStopwatch.TimeShowType.hhmmss;
+            this.uiLedStopwatch2.Size = new System.Drawing.Size(57, 21);
+            this.uiLedStopwatch2.TabIndex = 46;
+            this.uiLedStopwatch2.Text = "00:16:19";
+            // 
+            // uiImageButton7
+            // 
+            this.uiImageButton7.BackColor = System.Drawing.Color.Transparent;
+            this.uiImageButton7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.uiImageButton7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton7.ForeColor = System.Drawing.Color.Black;
+            this.uiImageButton7.Image = global::DQATEST.Properties.Resources.Emergency;
+            this.uiImageButton7.ImageOffset = new System.Drawing.Point(12, 5);
+            this.uiImageButton7.Location = new System.Drawing.Point(206, 0);
+            this.uiImageButton7.Name = "uiImageButton7";
+            this.uiImageButton7.Size = new System.Drawing.Size(56, 47);
+            this.uiImageButton7.TabIndex = 57;
+            this.uiImageButton7.TabStop = false;
+            this.uiImageButton7.Text = "Stop";
+            this.uiImageButton7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // uiImageButton8
+            // 
+            this.uiImageButton8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.uiImageButton8.BackColor = System.Drawing.Color.Transparent;
+            this.uiImageButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton8.ForeColor = System.Drawing.Color.Black;
+            this.uiImageButton8.Image = global::DQATEST.Properties.Resources.Close;
+            this.uiImageButton8.ImageOffset = new System.Drawing.Point(12, 5);
+            this.uiImageButton8.Location = new System.Drawing.Point(64, 0);
+            this.uiImageButton8.Name = "uiImageButton8";
+            this.uiImageButton8.Size = new System.Drawing.Size(56, 46);
+            this.uiImageButton8.TabIndex = 58;
+            this.uiImageButton8.TabStop = false;
+            this.uiImageButton8.Text = "Start";
+            this.uiImageButton8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // uiImageButton9
+            // 
+            this.uiImageButton9.BackColor = System.Drawing.Color.Transparent;
+            this.uiImageButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.uiImageButton9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiImageButton9.ForeColor = System.Drawing.Color.Black;
+            this.uiImageButton9.Image = global::DQATEST.Properties.Resources.Status;
+            this.uiImageButton9.ImageOffset = new System.Drawing.Point(12, 5);
+            this.uiImageButton9.Location = new System.Drawing.Point(0, 0);
+            this.uiImageButton9.Name = "uiImageButton9";
+            this.uiImageButton9.Size = new System.Drawing.Size(56, 47);
+            this.uiImageButton9.TabIndex = 59;
+            this.uiImageButton9.TabStop = false;
+            this.uiImageButton9.Text = "Status";
+            this.uiImageButton9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // tabDetails
+            // 
+            this.tabDetails.BackColor = System.Drawing.Color.White;
+            this.tabDetails.Location = new System.Drawing.Point(0, 20);
+            this.tabDetails.Name = "tabDetails";
+            this.tabDetails.Size = new System.Drawing.Size(264, 185);
+            this.tabDetails.TabIndex = 1;
+            this.tabDetails.Text = "details";
+            // 
+            // tabLogs
+            // 
+            this.tabLogs.BackColor = System.Drawing.Color.White;
+            this.tabLogs.Location = new System.Drawing.Point(0, 20);
+            this.tabLogs.Name = "tabLogs";
+            this.tabLogs.Size = new System.Drawing.Size(264, 185);
+            this.tabLogs.TabIndex = 2;
+            this.tabLogs.Text = "logs";
+            // 
             // uiTitlePanel1
             // 
             this.uiTitlePanel1.Controls.Add(this.uiTabControl2);
@@ -531,7 +546,6 @@
             this.uiTabControl2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiTabControl2.ItemSize = new System.Drawing.Size(80, 20);
             this.uiTabControl2.Location = new System.Drawing.Point(0, 35);
-            this.uiTabControl2.MainPage = "";
             this.uiTabControl2.Name = "uiTabControl2";
             this.uiTabControl2.SelectedIndex = 0;
             this.uiTabControl2.Size = new System.Drawing.Size(262, 205);
@@ -572,6 +586,7 @@
             // 
             // splitContainer3.Panel2
             // 
+            this.splitContainer3.Panel2.Controls.Add(this.uiLedStopwatch1);
             this.splitContainer3.Panel2.Controls.Add(this.uiImageButton1);
             this.splitContainer3.Panel2.Controls.Add(this.uiImageButton2);
             this.splitContainer3.Panel2.Controls.Add(this.uiImageButton3);
@@ -723,6 +738,21 @@
             this.pictureBox1.TabIndex = 76;
             this.pictureBox1.TabStop = false;
             // 
+            // uiLedStopwatch1
+            // 
+            this.uiLedStopwatch1.Active = true;
+            this.uiLedStopwatch1.BackColor = System.Drawing.Color.Black;
+            this.uiLedStopwatch1.CharCount = 8;
+            this.uiLedStopwatch1.ForeColor = System.Drawing.Color.Lime;
+            this.uiLedStopwatch1.IntervalIn = 0;
+            this.uiLedStopwatch1.IntervalOn = 1;
+            this.uiLedStopwatch1.Location = new System.Drawing.Point(136, 13);
+            this.uiLedStopwatch1.Name = "uiLedStopwatch1";
+            this.uiLedStopwatch1.ShowType = Sunny.UI.UILedStopwatch.TimeShowType.hhmmss;
+            this.uiLedStopwatch1.Size = new System.Drawing.Size(57, 21);
+            this.uiLedStopwatch1.TabIndex = 46;
+            this.uiLedStopwatch1.Text = "00:16:19";
+            // 
             // uiImageButton1
             // 
             this.uiImageButton1.BackColor = System.Drawing.Color.Transparent;
@@ -778,33 +808,20 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Location = new System.Drawing.Point(0, 40);
+            this.tabPage2.Location = new System.Drawing.Point(0, 20);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(450, 230);
+            this.tabPage2.Size = new System.Drawing.Size(262, 185);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "details";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Location = new System.Drawing.Point(0, 40);
+            this.tabPage3.Location = new System.Drawing.Point(0, 20);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(450, 230);
+            this.tabPage3.Size = new System.Drawing.Size(262, 185);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "logs";
-            // 
-            // uiLedStopwatch1
-            // 
-            this.uiLedStopwatch1.BackColor = System.Drawing.Color.Black;
-            this.uiLedStopwatch1.CharCount = 6;
-            this.uiLedStopwatch1.Font = new System.Drawing.Font("微软雅黑", 8F);
-            this.uiLedStopwatch1.ForeColor = System.Drawing.Color.Lime;
-            this.uiLedStopwatch1.Location = new System.Drawing.Point(424, 368);
-            this.uiLedStopwatch1.Name = "uiLedStopwatch1";
-            this.uiLedStopwatch1.ShowType = Sunny.UI.UILedStopwatch.TimeShowType.hhmmss;
-            this.uiLedStopwatch1.Size = new System.Drawing.Size(118, 34);
-            this.uiLedStopwatch1.TabIndex = 16;
-            this.uiLedStopwatch1.Text = "uiLedStopwatch1";
             // 
             // FMainSID
             // 
@@ -836,10 +853,10 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.uiTitlePanel1.ResumeLayout(false);
             this.uiTabControl2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -880,6 +897,7 @@
         private Sunny.UI.UIImageButton uiImageButton7;
         private Sunny.UI.UIImageButton uiImageButton8;
         private Sunny.UI.UIImageButton uiImageButton9;
+        private Sunny.UI.UILedStopwatch uiLedStopwatch2;
         private Sunny.UI.UITitlePanel uiTitlePanel1;
         private Sunny.UI.UITabControl uiTabControl2;
         private System.Windows.Forms.TabPage tabPage1;
@@ -893,11 +911,11 @@
         private Sunny.UI.UILabel uiLabel6;
         private Sunny.UI.UILabel uiLabel7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Sunny.UI.UILedStopwatch uiLedStopwatch1;
         private Sunny.UI.UIImageButton uiImageButton1;
         private Sunny.UI.UIImageButton uiImageButton2;
         private Sunny.UI.UIImageButton uiImageButton3;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private Sunny.UI.UILedStopwatch uiLedStopwatch1;
     }
 }

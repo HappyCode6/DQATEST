@@ -17,7 +17,9 @@ namespace DQATEST
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FMain());
-            Application.Run(new FMainSID());
+            //Application.Run(new FMainSID());
+            //Application.Run(new FMainSmartDoor());
+            CSIDStation sid = new CSIDStation();
         }
     }
 }
